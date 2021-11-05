@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: darkgray;
+    font-family: sans-serif;
+}
+
+.game {
+    margin: 20px auto;
+    max-width: 600px;
+    height: 95vh;
+    background: rgb(42, 42, 45);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px 5px rgba(0, 0, 0, .3);
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: rgb(252, 252, 252);
+    align-items: center;
+    text-align: center;
+}
+.player-score p, .computer-score p {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.intro {
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+}
+
+
+.intro h1 {
+    color: rgb(252, 252, 252);
+}
+
+.intro button {
+    padding: 10px 10px ;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    background: darkolivegreen;
+    cursor: pointer;
+    color: rgb(252, 252, 252);
+    border-radius: 5px;
+}
+.intro button:focus {
+     outline:1px solid rgb(29, 29, 29);
+}
+
+.match {
+    position: absolute;
+    top: 30vh;
+    transition: opacity 0.5s ease 0.5s;
+}
+
+.match h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(252, 252, 252);
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.match .options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.player-hand {
+    transform: rotateY(180deg);
+
+}
+
+.options button {
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    background: darkolivegreen;
+    color: rgb(252, 252, 252);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.options button:focus {
+    outline:1px solid rgb(29, 29, 29);
+}
+
+div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
+
+div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
