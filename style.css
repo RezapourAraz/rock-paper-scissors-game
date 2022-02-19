@@ -10,12 +10,14 @@ body {
 }
 
 .game {
-    margin: 20px auto;
+    margin: 0 auto;
     max-width: 600px;
-    height: 95vh;
+    height: 100vh;
     background: rgb(42, 42, 45);
     border-radius: 10px;
     box-shadow: 3px 3px 8px 5px rgba(0, 0, 0, .3);
+    align-items: center;
+    justify-content: center;
 }
 
 .score {
@@ -64,6 +66,8 @@ body {
 .match {
     position: absolute;
     top: 30vh;
+    width: 600px;
+    margin: 0 auto;
     transition: opacity 0.5s ease 0.5s;
 }
 
@@ -75,15 +79,25 @@ body {
     margin-bottom: 30px;
 }
 
+.hands {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
 .match .options {
     display: flex;
     justify-content: space-around;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .player-hand {
     transform: rotateY(180deg);
+    width: 150px;
 
+}
+.computer-hand {
+    width: 150px;
 }
 
 .options button {
@@ -109,3 +123,8 @@ div.fadeOut {
     pointer-events: none;
 }
 
+@media (max-width: 768px) {
+    .match {
+        width: 100%;
+    }
+}
